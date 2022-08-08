@@ -5,36 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relvise</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="content-container">
-            <header class="header">
-                <div class="site-name">Relvise</div>
-                <nav class="menu">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="" class="header__logo">
+                    Relvise
+                </a>
+                <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li><a class="menu__link" href="">Home</a></li>
-                        <li><a class="menu__link" href="">Product</a></li>
-                        <li><a class="menu__link" href="">Pricing</a></li>
-                        <li><a class="menu__link" href="">Contact</a></li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Product</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Pricing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Contact</a>
+                        </li>
                     </ul>
                 </nav>
-            </header>
-            <main>
-                <section class="services">
-                    <h1 class="services__title">Finance and Consultancy Solution</h1>
-                    <div class="services__subtitle">We know how large objects will act, but things on a small scale.</div>
-                    <button>Get Quote Now</button>
-                    <button>Learn More</button>
-                </section>
-            </main>
-        </div>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="page__main-block main-block">
+                <div class="main-block__container _container">
+                   <div class="main-block__body">
+                        <h1 class="main-block__title">Finance and Consultancy Solution</h1>
+                        <div class="main-block__text">
+                            We know how large objects will act, but things on a small scale.
+                        </div>
+                        <div class="main-block__buttons">
+                            <a href="" class="main-block__button main-block__button_orange">Get Quote Now</a>
+                            <a href="" class="main-block__button main-block__button_border">Learn More</a>
+                        </div>
+                   </div>
+                </div>
+                <div class="main-block__image _ibg">
+                    <img src="assets/img/background.jpg" alt="background">
+                </div>
+            </div>
+            <div class="page__services-block services-block">
+                
+            </div>
+        </main>
+
+        <footer class="footer">
+            Footer
+        </footer>
     </div>
 </body>
-
-</html>
