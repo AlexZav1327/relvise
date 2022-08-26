@@ -157,18 +157,10 @@ body {
     flex: 1 1 auto;
 }
 
-.page__main-block {
-
-}
-
 .page__services {
     margin: -111px 0 0 0;
     position: relative;
     z-index: 2;
-}
-
-.page__advantages {
-
 }
 
 .header-block {
@@ -193,14 +185,14 @@ body {
     color: #737373;
 }
 
+.page__clients {
+    margin: 0 0 20px 0;
+}
+
 /* -------------------- main-block -------------------- */
 
 .main-block {
     position: relative;
-}
-
-.main-block__container {
-
 }
 
 .main-block__body {
@@ -311,18 +303,6 @@ body {
 }
 
 /* -------------------- services -------------------- */
-
-.services {
-
-}
-
-.services__container {
-
-}
-
-.services__body {
-
-}
 
 @media (min-width: 670px) {
     .services__body {
@@ -755,4 +735,109 @@ body {
 
 .clients__item img {
     max-width: 100%;
+}
+
+/* -------------------- subscribe -------------------- */
+
+.subscribe {
+    position: relative;
+    padding: 0 0 20px 0;
+}
+
+.subscribe__body {
+    padding: 30px 50px;
+    align-items: center;
+    background-color: #17213C;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.subscribe__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+    color: #ffffff;
+}
+
+.subscribe__form {
+    flex: 0 1 50%;
+    display: flex;
+    text-align: center;
+    min-height: 58px;
+}
+
+.subscribe__input {
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 0 20px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+
+.subscribe__input:focus {
+    color:#FF7B47;
+    font-size: 16px;
+}
+
+.subscribe__button {
+    background: #FF7B47;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 22.5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(28 / 14 * 100%);
+    color: #FFFFFF;
+}
+
+@media (max-width: 767.98px) {
+    .subscribe__body {
+        margin: 0 -15px;
+        padding: 20px 15px;
+    }    
+    .subscribe__title {
+        margin: 0 0 23px 0;
+    }
+    .subscribe__button {
+        padding: 0 15px;
+    }
+
+    .subscribe__input {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 1075px) {
+    .subscribe__body {
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .subscribe::before {
+        content: "";
+        background-color: #252B42;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 77px;
+    }
+    .subscribe__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscribe__title {
+        max-width: 266px;
+    }
 }
