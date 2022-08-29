@@ -841,3 +841,114 @@ body {
         max-width: 266px;
     }
 }
+
+/* -------------------- getintouch -------------------- */
+
+.getintouch {
+    padding: 80px 0 136px 0;
+}
+
+.getintouch__header {
+    margin: 0 0 80px 0;
+}
+
+.getintouch__items {
+    margin: 0 -15px;
+}
+
+.getintouch__item {
+    flex: 0 1 33.333%;
+}
+
+.item-getintouch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 50px 15px;
+}
+
+.item-getintouch > *:not(:last-child) {
+    margin: 0 0 15px 0;
+}
+
+.item-getintouch_activ {
+    background-color: #252B42;
+    color: #FFFFFF;
+    padding: 80px 15px;
+}
+
+.item-getintouch__emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-getintouch__email {
+    color: inherit;
+    font-weight: 600;
+    line-height: calc(24 / 14 * 100%);
+}
+
+.item-getintouch__email:hover {
+    text-decoration: underline;
+}
+
+.item-getintouch__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+}
+
+.item-getintouch__button {
+    min-height: 44px;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    line-height: calc(24 / 14 * 100%);
+    color: #FF7B47;
+    padding: 5px 20px;
+    transition: all 0.5s ease 0s;
+}
+
+.item-getintouch__button:hover {
+    background-color: #FF7B47;
+    color: #FFFFFF;
+}
+
+
+.item-getintouch_activ .item-getintouch__button {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.item-getintouch_activ .item-getintouch__button:hover {
+    background-color: #FFFFFF;
+    color: #252B42;
+}
+
+@media (max-width: 991.98px) {
+    .getintouch {
+        padding: 50px 0;
+    }
+    .getintouch__header {
+        margin: 0 0 40px 0;
+    }
+    .item-getintouch_activ {
+        padding: 50px 15px;
+    }
+}
+
+@media(min-width: 991.98px) {
+    .getintouch__items {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }  
+}
