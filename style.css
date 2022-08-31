@@ -144,6 +144,10 @@ body {
     line-height: calc(24 / 14 * 100%);
 }
 
+.menu__link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 478.98px) {
     .menu__link {
         font-size: 17px;
@@ -275,11 +279,23 @@ body {
 .main-block__button_orange {
     background: #FF7B47;
     color: #ffffff;
+    transition: all 0.5s ease 0s;
+}
+
+.main-block__button_orange:hover {
+    background-color: #0D5C63;
+    color: #FFFFFF;
 }
 
 .main-block__button_border {
     border: 1px solid #0D5C63;
     color: #0D5C63;
+    transition: all 0.5s ease 0s;
+}
+
+.main-block__button_border:hover {
+    border-color: #FF7B47;
+    color: #FF7B47;
 }
 
 .main-block__image {
@@ -846,6 +862,7 @@ body {
 
 .getintouch {
     padding: 80px 0 136px 0;
+    background-color: #F3F3F3;
 }
 
 .getintouch__header {
@@ -922,7 +939,6 @@ body {
     color: #FFFFFF;
 }
 
-
 .item-getintouch_activ .item-getintouch__button {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
@@ -935,7 +951,7 @@ body {
 
 @media (max-width: 991.98px) {
     .getintouch {
-        padding: 50px 0;
+        padding: 50px 0 0 0;
     }
     .getintouch__header {
         margin: 0 0 40px 0;
@@ -951,4 +967,66 @@ body {
         align-items: center;
         margin: 0;
     }  
+}
+
+/* -------------------- contact -------------------- */
+
+.contact {
+    padding: 40px 0;
+    background-color: #FAFAFA;
+}
+
+@media(max-width: 991.98px) {
+    .contact {
+        padding: 60px 0 40px 0;
+    }
+}
+
+.contact__content {
+    padding: 0 0 25px 0;
+}
+
+@media(min-width: 767.98px) {
+    .contact__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact__content {
+        padding: 0 25px 0 0;
+    }
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+}
+
+.contact__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.contact__text {
+    color: #737373;
+    line-height: calc(20 / 14 * 100%);
+}
+
+.contact__button {
+    display: flex;
+    background-color: #FF7B47;
+    border-radius: 5px;
+    min-height: 58px;
+    justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding: 5px 40px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: calc(28 / 14 * 100%);
+    transition: background-color 0.5s ease 0s;
+}
+
+.contact__button:hover {
+    background-color: #252B42;
 }
