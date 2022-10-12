@@ -77,7 +77,7 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 50;
+    z-index: 10;
 }
 
 .header__container {
@@ -198,7 +198,7 @@ body {
 .main-block__body {
     padding: 184px 0 191px 0;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     max-width: 403px;
 }
 
